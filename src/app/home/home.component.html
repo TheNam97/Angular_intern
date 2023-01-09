@@ -2,7 +2,7 @@
     <div *ngFor="let trai of traiCay; let i = index">
         <li>{{i+1}} {{trai}}</li>
     </div>
-    <table class="table">
+    <!-- <table class="table">
         <tr>
             <th>Thu tu</th>
             <th>Ten</th>
@@ -22,5 +22,13 @@
                 <span >{{trai.hagia | onsale | uppercase}}</span>
             </td>
         </tr>
-    </table>
+    </table> -->
+    <br>
+    <select name="cars" id="cars" (change)="changeCity($event)">
+        <option *ngFor="let city of cities" value="{{city.city}}">{{city.city}}</option>
+    </select>
+    <br> <br>
+    <select id="district">
+        <option *ngFor="let d of districts" value="{{d}}">{{d}}</option>
+    </select>
 </div>
