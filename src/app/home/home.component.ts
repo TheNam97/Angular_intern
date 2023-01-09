@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   public name='Nguyễn Nam'
+  public age = 26
   constructor(){}
-  
+
 }

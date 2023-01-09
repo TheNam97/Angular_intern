@@ -1,10 +1,4 @@
-<h3 class="aaa">This is component</h3>
-<p>Xin chào {{name}}</p>
-<!-- cách truyền 1 -->
-<input type="text" value="{{name}}"/> 
-<br>
-<br>
-<!-- cách truyền 2  -->
-<input [value]="name" title="Tên của bạn {{name}}"/>
-<br>
-<input [value]="name" [title]="'đây là' + name"/>
+<div class="test">
+    <h2 *ngIf="age > 30">bạn già</h2>
+    <h2 *ngIf="age < 30">bạn trẻ</h2>
+</div>
