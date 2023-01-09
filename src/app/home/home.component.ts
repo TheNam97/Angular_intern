@@ -9,5 +9,7 @@ export class HomeComponent {
   public name='Nguyễn Nam'
   public age = 26
   constructor(){}
-
+  public resetName(): void {
+    this.name=''
+  }
 }
