@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { FormsModule } from "@angular/forms";
-import { OnsalePipe } from './onsale.pipe'; // Dùng ngModel phải import
+import { OnsalePipe } from './onsale.pipe';
+import { AboutComponent } from './about/about.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; // Dùng ngModel phải import
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OnsalePipe,
+    AboutComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
