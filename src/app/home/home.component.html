@@ -1,5 +1,9 @@
 <div class="test">
- <input type="text" [(ngModel)]="name">
- <h1>Hello {{name}}</h1>
+ <input type="text" [(ngModel)]="age">
+ <h1>Nam {{age}} tuổi</h1>
  <button (click)="resetName()"> reset Name </button>
+
+ <div *ngIf="age <= 18; then tre ; else gia"></div>
+ <ng-tempalte #tre> <h2>AAA</h2></ng-tempalte>
+ <ng-tempalte #gia> <h2>BBB</h2> </ng-tempalte>
 </div>
