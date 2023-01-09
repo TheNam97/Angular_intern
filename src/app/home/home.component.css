@@ -2,3 +2,15 @@
 .aaa{
     color: red;
 }
+.table,td,th{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+th, td{
+    min-width: 100px;
+    text-align: center;
+    height: 30px;
+}
+.so-am{
+    color: red;
+}

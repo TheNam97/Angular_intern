@@ -1,9 +1,23 @@
 <div class="test">
- <input type="text" [(ngModel)]="age">
- <h1>Nam {{age}} tuổi</h1>
- <button (click)="resetName()"> reset Name </button>
-
- <div *ngIf="age <= 18; then tre ; else gia"></div>
- <ng-tempalte #tre> <h2>AAA</h2></ng-tempalte>
- <ng-tempalte #gia> <h2>BBB</h2> </ng-tempalte>
+    <div *ngFor="let trai of traiCay; let i = index">
+        <li>{{i+1}} {{trai}}</li>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Thu tu</th>
+            <th>Ten</th>
+            <th>Gia</th>
+            <th>Ha Gia</th>
+        </tr>
+        <tr *ngFor="let trai of traiCay2 ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{trai.ten}}</td>
+            <td>
+                <span [ngClass]="{'so-am':trai.gia < 0}">{{trai.gia}}</span>
+            </td>
+            <td>
+                <span *ngIf="trai.hagia==true">Dang ha gia!</span>
+            </td>
+        </tr>
+    </table>
 </div>
