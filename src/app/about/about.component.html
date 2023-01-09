@@ -1,1 +1,14 @@
 <p>about works!</p>
+<ul [ngSwitch]="loginName">
+    <li *ngSwitchCase=" 'user' " >
+        <p> user is logged in</p>
+    </li>
+    <li *ngSwitchCase=" 'admin' " >
+        <p> admin is logged in</p>
+        <!-- khi admin logged thì mở 1 trang nào đó -->
+        <app-home></app-home>
+    </li>
+    <li *ngSwitchDefault >
+        <p> default is logged in</p>
+    </li>
+</ul>
