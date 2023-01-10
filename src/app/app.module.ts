@@ -9,7 +9,9 @@ import { FormsModule } from "@angular/forms";
 import { OnsalePipe } from './onsale.pipe';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HightlightDirective } from './Directives/hightlight.directive'; // Dùng ngModel phải import
+import { HightlightDirective } from './Directives/hightlight.directive';
+import { ConComponent } from './con/con.component';
+import { ChaComponent } from './cha/cha.component'; // Dùng ngModel phải import
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HightlightDirective } from './Directives/hightlight.directive'; // Dùn
     AboutComponent,
     PageNotFoundComponent,
     HightlightDirective,
+    ConComponent,
+    ChaComponent,
     
   ],
   imports: [

@@ -1,0 +1,10 @@
+day la component cha
+<br>
+<button (click)="choTien()">cho con tien</button>
+<br>
+<span>{{chaMessage}}</span>
+<br>
+<!-- Hành vi con gọi sau đó gọi đến phương thức của cha -->
+<app-con #thangTeo ten="teo" (conGoii)="chaoCon($event)"></app-con> 
+<br>
+<app-con #thangTy ten="ty" (conGoii)="chaoCon($event)"></app-con>
